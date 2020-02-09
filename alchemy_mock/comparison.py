@@ -147,7 +147,7 @@ class ExpressionMatcher(PrettyExpression):
                     for i, j in six.moves.zip_longest(self.expr, other)
                 )
 
-            elif isinstance(self.expr, collections.Mapping):
+            elif isinstance(self.expr, collections.abc.Mapping):
                 same_keys = self.expr.keys() == other.keys()
                 return same_keys and all(
                     _(self.expr[k]) == other[k] for k in self.expr.keys()
