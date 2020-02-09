@@ -319,6 +319,7 @@ class UnifiedAlchemyMagicMock(AlchemyMagicMock):
         "filter": UnorderedCall,
         "filter_by": UnorderedCall,
         "order_by": None,
+        "offset": None,
         "limit": None,
         "distinct": None,
     }
